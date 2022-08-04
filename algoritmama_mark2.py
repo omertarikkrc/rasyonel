@@ -46,7 +46,11 @@ elif yaw_mav > 180 and yaw_mav < 270:
     above_left_point =LocationGlobalRelative(lat_mav-additive_degree_for_frame_horizantal,lon_mav + additive_degree_for_frame_vertical)
     bottom_right_point=LocationGlobalRelative(lat_mav+additive_degree_for_frame_horizantal,lon_mav-additive_degree_for_frame_vertical)
     bottom_left_point =LocationGlobalRelative(lat_mav+ additive_degree_for_frame_horizantal,lon_mav+ additive_degree_for_frame_vertical)
-
+else:
+    above_right_point=LocationGlobalRelative(lat_mav -additive_degree_for_frame_horizantal,lon_mav+ additive_degree_for_frame_vertical)
+    above_left_point =LocationGlobalRelative(lat_mav-additive_degree_for_frame_horizantal,lon_mav - additive_degree_for_frame_vertical)
+    bottom_right_point=LocationGlobalRelative(lat_mav-additive_degree_for_frame_horizantal,lon_mav+additive_degree_for_frame_vertical)
+    bottom_left_point =LocationGlobalRelative(lat_mav+ additive_degree_for_frame_horizantal,lon_mav+ additive_degree_for_frame_vertical)
 
 
 
