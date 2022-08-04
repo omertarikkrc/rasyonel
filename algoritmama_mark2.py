@@ -1,5 +1,10 @@
 from dronekit import connect
 from math import cos, pi, sin, tan
+from deneme8 import cx,cy
+
+# ml data:
+x_axis_ratio =cx/640
+y_axis_ratio =cy/480
 
 
 
